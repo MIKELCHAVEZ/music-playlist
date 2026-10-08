@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  font-family: Arial, sans-serif;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ef2828;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-back {
+  font-size: 16px;
+}
+
+.header-title {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.menu {
+  font-size: 24px;
+}
+
+.album-info {
+  width: 100%;
+  text-align: center;
+}
+
+.album-info h2 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.album-info p {
+  font-size: 9px;
+  color: #c8ced8;
+}
+
+.album-picture {
+  display: block;
+
+  width: 120px;
+  height: 120px;
+
+  margin: 12px auto 15px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.track-list {
+  width: 100%;
+  height: 340px;
+
+  padding: 5px 15px;
+
+  border-top: 1px solid #8994a5;
+
+  overflow: hidden;
+}
+
+.track {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.track-info b {
+  display: block;
+  font-size: 10px;
+}
+
+.track-info small {
+  display: block;
+
+  margin-top: 2px;
+
+  font-size: 8px;
+  color: #c8ced8;
+}
+
+.icons {
+  display: flex;
+  gap: 5px;
+
+  font-size: 15px;
+}
+
+.music-bar {
+  position: absolute;
+
+  left: 0;
+  bottom: 55px;
+
+  width: 100%;
+  height: 22px;
+
+  border-top: 1px solid #8994a5;
+}
+
+.line {
+  position: absolute;
+
+  left: 7%;
+  top: 10px;
+
+  width: 86%;
+  height: 2px;
+
+  background: #8994a5;
+}
+
+.progress {
+  width: 32%;
+  height: 2px;
+
+  background: white;
+}
+
+.circle {
+  position: absolute;
+
+  top: -2px;
+  left: 32%;
+
+  width: 6px;
+  height: 6px;
+
+  background: white;
+
+  border-radius: 50%;
+}
+
+.bottom {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 55px;
+
+  background: #e43f3f;
+
+  border-top: 1px solid #333;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.back {
+  width: 14px;
+  height: 14px;
+
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+
+  transform: rotate(45deg);
+}
+
+.home {
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid white;
+
+  border-radius: 50%;
+}
+
+.recent {
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid white;
+}
