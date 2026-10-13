@@ -81,11 +81,7 @@ function App() {
         </div>
       </div>
 
-      <div className="bottom">
-        <span className="back"></span>
-        <span className="home"></span>
-        <span className="recent"></span>
-      </div>
+
 
     </div>
   )

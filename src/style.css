@@ -5,9 +5,8 @@
 }
 
 body {
-  background: #eeeeee;
+  background: #d6d6d6;
   font-family: Arial, sans-serif;
-
   min-height: 100vh;
 
   display: flex;
@@ -18,19 +17,18 @@ body {
 .phone {
   width: 300px;
   height: 600px;
-
   position: relative;
-
   overflow: hidden;
 
-  background: #ef2828;
+  background: #121212;
   color: white;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px #0004;
 }
 
 .header {
   width: 100%;
-  height: 55px;
-
+  height: 42px;
   padding: 0 15px;
 
   display: flex;
@@ -39,21 +37,33 @@ body {
 }
 
 .header-back {
-  font-size: 16px;
+  font-size: 20px;
+  color: #1ed760;
+  cursor: pointer;
 }
 
 .header-title {
   font-size: 11px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .menu {
-  font-size: 24px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .album-info {
   width: 100%;
   text-align: center;
+  padding: 5px 15px 8px;
+
+  background: linear-gradient(
+    to bottom,
+    #285b3c,
+    #193c2a,
+    #121212
+  );
 }
 
 .album-info h2 {
@@ -63,148 +73,108 @@ body {
 
 .album-info p {
   font-size: 9px;
-  color: #c8ced8;
+  color: #d0d0d0;
 }
 
 .album-picture {
   display: block;
+  width: 95px;
+  height: 95px;
 
-  width: 120px;
-  height: 120px;
-
-  margin: 12px auto 15px;
-
+  margin: 8px auto;
   object-fit: cover;
 
-  border-radius: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #0006;
 }
 
 .track-list {
   width: 100%;
-  height: 340px;
+  padding: 0 12px;
+  margin: 0;
 
-  padding: 5px 15px;
-
-  border-top: 1px solid #8994a5;
-
+  height: auto;
   overflow: hidden;
 }
 
 .track {
   width: 100%;
-  height: 40px;
+  height: 32px;
+  min-height: 0;
+  padding: 3px 6px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.track:hover {
+  background: #292929;
 }
 
 .track-info b {
   display: block;
   font-size: 10px;
+  margin-bottom: 2px;
 }
 
 .track-info small {
   display: block;
-
-  margin-top: 2px;
-
   font-size: 8px;
-  color: #c8ced8;
+  color: #b3b3b3;
 }
 
 .icons {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
 
-  font-size: 15px;
+  font-size: 13px;
+  color: #b3b3b3;
 }
 
 .music-bar {
   position: absolute;
-
   left: 0;
-  bottom: 55px;
+  bottom: 65px;
 
   width: 100%;
   height: 22px;
 
-  border-top: 1px solid #8994a5;
+  background: #181818;
 }
 
 .line {
   position: absolute;
-
-  left: 7%;
   top: 10px;
+  left: 12px;
 
-  width: 86%;
-  height: 2px;
+  width: calc(100% - 24px);
+  height: 3px;
 
-  background: #8994a5;
+  background: #454545;
+  border-radius: 5px;
 }
 
 .progress {
   width: 32%;
-  height: 2px;
+  height: 3px;
 
-  background: white;
+  background: #1ed760;
+  border-radius: 5px;
 }
 
 .circle {
   position: absolute;
-
-  top: -2px;
+  top: -3px;
   left: 32%;
 
-  width: 6px;
-  height: 6px;
+  width: 9px;
+  height: 9px;
 
-  background: white;
-
+  background: #1ed760;
   border-radius: 50%;
-}
-
-.bottom {
-  position: absolute;
-
-  left: 0;
-  bottom: 0;
-
-  width: 100%;
-  height: 55px;
-
-  background: #e43f3f;
-
-  border-top: 1px solid #333;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.back {
-  width: 14px;
-  height: 14px;
-
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
-
-  transform: rotate(45deg);
-}
-
-.home {
-  width: 15px;
-  height: 15px;
-
-  border: 2px solid white;
-
-  border-radius: 50%;
-}
-
-.recent {
-  width: 15px;
-  height: 15px;
-
-  border: 2px solid white;
 }
